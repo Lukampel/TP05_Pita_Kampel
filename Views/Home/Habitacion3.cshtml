@@ -1,0 +1,23 @@
+ @model TP05_Kampel_Pita.Models.Habitacion
+
+<h2>Habitación @Model.Numero</h2>
+<p>@Model.Descripcion</p>
+<p>@Model.Pista</p>
+
+<div style="border:1px solid gray; padding:1em; width:50%">
+    <p>Querido visitante,<br>
+    Me <b>s</b>iento orgulloso de ver <b>c</b>ómo ha crecido este lugar.<br>
+    Pero <span style="color:red">l</span>as memorias persisten. Si <b>a</b>lguien llega a encontrar esto,<br>
+    sabrá <span style="color:red">v</span>erdades que yacen bajo el polvo.<br>
+    Nunca olvides que la <b>e</b>speranza puede abrir puertas ocultas.</p>
+</div>
+
+<form method="post" asp-action="ResolverHabitacion">
+    <input type="hidden" name="habitacionNumero" value="3" />
+    <label>Palabra clave:</label>
+    <input type="text" name="respuesta" />
+    <button type="submit">Enviar</button>
+</form>
+@if(ViewBag.Error != null) {
+    <p style="color:red">@ViewBag.Error</p>
+}

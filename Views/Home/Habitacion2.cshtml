@@ -1,0 +1,21 @@
+@model TP05_Kampel_Pita.Models.Habitacion
+
+<h2>Habitación @Model.Numero</h2>
+<p>@Model.Descripcion</p>
+<p>@Model.Pista</p>
+
+<ul>
+    <li>1. No soy humano, pero tengo cabeza. Me usan en la cocina y corto sin pereza. ¿Qué soy?</li>
+    <li>2. En una hoja estoy, con rayas me verás. Si me llenas con tinta, mucho sabrás. ¿Qué soy?</li>
+    <li>3. En tu espalda estoy, peso a veces doy. Para ir al colegio, siempre voy. ¿Qué soy?</li>
+</ul>
+
+<form method="post" asp-action="ResolverHabitacion">
+    <input type="hidden" name="habitacionNumero" value="2" />
+    <label>Palabra clave (una letra por objeto):</label>
+    <input type="text" name="respuesta" />
+    <button type="submit">Enviar</button>
+</form>
+@if(ViewBag.Error != null) {
+    <p style="color:red">@ViewBag.Error</p>
+}

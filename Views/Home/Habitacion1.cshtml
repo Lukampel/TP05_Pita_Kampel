@@ -1,0 +1,20 @@
+@model TP05_Kampel_Pita.Models.Habitacion
+
+<h2>Habitación @Model.Numero</h2>
+<p>@Model.Descripcion</p>
+<p>@Model.Pista</p>
+
+<div>
+    <img src="@Model.Imagenes[0]" alt="foto" width="300" />
+    <img src="@Model.Imagenes[1]" alt="foto" width="300" />
+</div>
+
+<form method="post" asp-action="ResolverHabitacion">
+    <input type="hidden" name="habitacionNumero" value="1" />
+    <label>Palabra clave:</label>
+    <input type="text" name="respuesta" />
+    <button type="submit">Enviar</button>
+</form>
+@if(ViewBag.Error != null) {
+    <p style="color:red">@ViewBag.Error</p>
+}

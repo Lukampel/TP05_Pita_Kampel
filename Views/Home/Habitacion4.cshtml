@@ -1,0 +1,24 @@
+@model TP05_Kampel_Pita.Models.Habitacion
+
+<h2>Habitación @Model.Numero</h2>
+<p>@Model.Descripcion</p>
+<p>@Model.Pista</p>
+
+@for(int i = 0; i < Model.Audios.Length; i++) {
+    <div>
+        <p>Caja musical @(i+1)</p>
+        <audio controls>
+            <source src="@Model.Audios[i]" type="audio/mpeg">Tu navegador no soporta audio.
+        </audio>
+    </div>
+}
+
+<form method="post" asp-action="ResolverHabitacion">
+    <input type="hidden" name="habitacionNumero" value="4" />
+    <label>Palabra clave:</label>
+    <input type="text" name="respuesta" />
+    <button type="submit">Enviar</button>
+</form>
+@if(ViewBag.Error != null) {
+    <p style="color:red">@ViewBag.Error</p>
+}

@@ -1,8 +1,22 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
+﻿    @{
+        ViewData["Title"] = "Inicio - El Orfanato Olvidado";
+    }
 
-<div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
-</div>
+    <div class="inicio-container">
+        <h1>El Orfanato Olvidado</h1>
+
+        <p>
+            Bienvenido al juego de escape. Tendrás 60 minutos para superar 4 habitaciones llenas de enigmas y misterios.
+        </p>
+
+        <p>
+            ¿Serás capaz de descubrir los secretos del orfanato antes de que sea demasiado tarde?
+        </p>
+
+        <form asp-controller="Home" asp-action="Habitacion" method="get">
+            <button type="submit" class="btn btn-primary">Comenzar</button>
+        </form>
+    </div>
+
+
+

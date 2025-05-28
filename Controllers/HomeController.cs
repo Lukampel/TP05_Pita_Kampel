@@ -1,35 +1,102 @@
 using Microsoft.AspNetCore.Mvc;
 using TP05_Kampel_Pita.Models;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace ElOrfanatoOlvidado.Controllers
 {
-    public class JuegoController : Controller
+    public class HomeController : Controller
     {
-      
-        public IActionResult PantallaInicio()
+        private const string SessionKey = "SalaDeEscape";
+
+        public IActionResult Index()
         {
-            // Iniciar juego nuevo
-            var SalaDeEscape = new SalaDeEscape();
-            var jsonString = Objeto.ObjectToString(SalaDeEscape);
-            HttpContext.Session.SetString("Juego", jsonString);
-            return View("PantallaInicioView");
+            var salaDeEscape = new SalaDeEscape();
+            var jsonString = JsonConvert.SerializeObject(salaDeEscape);
+            HttpContext.Session.SetString(SessionKey, jsonString);
+            return View("Index");
         }
 
-        
         public IActionResult Habitacion()
         {
-          var jsonString = HttpContext.Session.GetString("Sala de Escape");
-          var SalaDeEscape = Objeto.StringToObject<SalaDeEscape>(jsonString);
+            var jsonString = HttpContext.Session.GetString(SessionKey);
+            var salaDeEscape = JsonConvert.DeserializeObject<SalaDeEscape>(jsonString);
 
+            if (salaDeEscape == null)
+                return RedirectToAction("Index");
 
-            if (SalaDeEscape == null)
-                return RedirectToAction("PantallaInicio");
+            if (salaDeEscape.tiempoTerminado())
+                return RedirectToAction("Perdio");
 
-            if (SalaDeEscape.TiempoCumplido())
-                return RedirectToAction("PantallaFinal", new { perdio = true });
+            switch (salaDeEscape.numHabitacion)
+            {
+                case 1:
+                    var habitacion1 = GenerarDatosHabitacion1();
+                    return View("Habitacion1", habitacion1);
+                case 2:
+                    var habitacion2 = GenerarDatosHabitacion2();
+                    return View("Habitacion2", habitacion2);
+                case 3:
+                    var habitacion3 = GenerarDatosHabitacion3();
+                    return View("Habitacion3", habitacion3);
+                case 4:
+                    var habitacion4 = GenerarDatosHabitacion4();
+                    return View("Habitacion4", habitacion4);
+                default:
+                    return RedirectToAction("Gano");
+            }
+        }
 
-            // Según habitación, mostrar la vista y datos
-            switch (SalaDeEscape.HabitacionActual)
+        [HttpPost]
+        public IActionResult ResolverHabitacion(int habitacionNumero, string respuesta)
+        {
+            var jsonString = HttpContext.Session.GetString(SessionKey);
+            var salaDeEscape = JsonConvert.DeserializeObject<SalaDeEscape>(jsonString);
+
+            if (salaDeEscape == null)
+                return RedirectToAction("Index");
+
+            if (salaDeEscape.tiempoTerminado())
+                return RedirectToAction("Perdio");
+
+            bool correcta = false;
+
+            switch (habitacionNumero)
+            {
+                case 1:
+                    correcta = respuesta?.ToLower() == "juguetes";
+                    if (correcta) salaDeEscape.CodigoHabitacion1 = respuesta;
+                    break;
+                case 2:
+                    correcta = respuesta?.ToLower() == "abc";
+                    if (correcta) salaDeEscape.CodigoHabitacion2 = respuesta;
+                    break;
+                case 3:
+                    correcta = respuesta?.ToLower() == "clave";
+                    if (correcta) salaDeEscape.CodigoHabitacion3 = respuesta;
+                    break;
+                case 4:
+                    correcta = respuesta?.ToLower() == "melodia";
+                    if (correcta) salaDeEscape.CodigoHabitacion4 = respuesta;
+                    break;
+            }
+
+            if (correcta)
+            {
+                salaDeEscape.AvanzarHabitacion();
+                HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
+
+                if (salaDeEscape.Gano)
+                    return RedirectToAction("Gano");
+
+                return RedirectToAction("Habitacion");
+            }
+
+            ViewBag.Error = "Respuesta incorrecta, intenta nuevamente.";
+            HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
+
+            // Para que el error se vea, mejor devolver la vista actual con modelo y ViewBag
+            switch (habitacionNumero)
             {
                 case 1:
                     return View("Habitacion1", GenerarDatosHabitacion1());
@@ -40,72 +107,21 @@ namespace ElOrfanatoOlvidado.Controllers
                 case 4:
                     return View("Habitacion4", GenerarDatosHabitacion4());
                 default:
-                    return RedirectToAction("PantallaFinal", new { perdio = false });
+                    return RedirectToAction("Index");
             }
         }
 
-        [HttpPost]
-        public IActionResult ResolverHabitacion(int habitacionNumero, string respuesta)
+        public IActionResult Gano()
         {
-            var jsonString = HttpContext.Session.GetString("Sala de Escape");
-          var SalaDeEscape = Objeto.StringToObject<SalaDeEscape>(jsonString);
-            if (SalaDeEscape == null)
-                return RedirectToAction("PantallaInicio");
-
-            if (SalaDeEscape.TiempoCumplido())
-                return RedirectToAction("PantallaFinal", new { perdio = true });
-
-            // Validar respuesta según habitación
-            bool correcta = false;
-
-            switch (habitacionNumero)
-            {
-                case 1:
-                    correcta = respuesta?.ToLower() == "juguetes";  // Ejemplo palabra clave de diferencias
-                    if (correcta) SalaDeEscape.CodigoHabitacion1 = respuesta;
-                    break;
-
-                case 2:
-                    correcta = respuesta?.ToLower() == "abc"; // Ejemplo letras objeto (pista 2)
-                    if (correcta) SalaDeEscape.CodigoHabitacion2 = respuesta;
-                    break;
-
-                case 3:
-                    correcta = respuesta?.ToLower() == "clave"; // Palabra clave carta
-                    if (correcta) SalaDeEscape.CodigoHabitacion3 = respuesta;
-                    break;
-
-                case 4:
-                    correcta = respuesta?.ToLower() == "melodia"; // Palabra clave canción correcta
-                    if (correcta) SalaDeEscape.CodigoHabitacion4 = respuesta;
-                    break;
-            }
-
-            if (correcta)
-            {
-                SalaDeEscape.Avanzar();
-                HttpContext.Session.SetString("Sala de escape", Objeto.ObjectToString(SalaDeEscape));
-
-
-                if (SalaDeEscape.Gano)
-                    return RedirectToAction("PantallaFinal", new { perdio = false });
-            }
-
-            // Si no acertó, vuelve a la misma habitación con mensaje de error
-            ViewBag.Error = correcta ? null : "Respuesta incorrecta, intenta nuevamente.";
-            HttpContext.Session.SetObjectAsJson("Juego", juego);
-
-            return RedirectToAction("Habitacion");
+            return View("Gano");
         }
 
-        public IActionResult PantallaFinal(bool perdio)
+        public IActionResult Perdio()
         {
-            ViewBag.Perdio = perdio;
-            return View("PantallaFinalView");
+            return View("Perdio");
         }
 
         // Métodos para generar datos de habitaciones
-
         private Habitacion GenerarDatosHabitacion1()
         {
             return new Habitacion
@@ -113,7 +129,7 @@ namespace ElOrfanatoOlvidado.Controllers
                 Numero = 1,
                 Descripcion = "Encuentra las diferencias entre estas dos imágenes y forma la palabra clave.",
                 Imagenes = new[] { "/images/habitacion1a.jpg", "/images/habitacion1b.jpg" },
-                Pista = "Las diferencias forman la palabra clave.",
+                Pista = "Encuentra las diferencias para lograr escapar...",
                 RespuestaCorrecta = "juguetes"
             };
         }
@@ -153,9 +169,11 @@ namespace ElOrfanatoOlvidado.Controllers
                     "/audio/cancion3.mp3",
                     "/audio/cancion4.mp3"
                 },
-                Pista = "Solo una canción coincide con la original."
+                Pista = "Solo una canción coincide con la original.",
+                RespuestaCorrecta = "melodia"
             };
         }
     }
 }
+
 
