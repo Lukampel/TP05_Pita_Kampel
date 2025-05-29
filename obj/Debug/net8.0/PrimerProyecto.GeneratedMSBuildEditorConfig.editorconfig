@@ -38,12 +38,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Historia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Integrantes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnRlZ3JhbnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Perdio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXJkaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Reglas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdsYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Shared/_Layout.cshtml]

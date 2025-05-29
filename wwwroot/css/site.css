@@ -1,23 +1,187 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
-}
-
-@media (min-width: 768px) {
-  html {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-size: 16px;
-  }
+    font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-  margin: 10px;
-  padding: 10px;
+.inicio-container {
+    background-image: url('/img/orfanato.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+.inicio-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.inicio-container h2 {
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.inicio-container p, li {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.reglas-lista, .historia {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.inicio-container ul {
+    padding-left: 20px;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.integrantes div {
+    text-align: center;
+}
+
+.integrantes img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.btn-primary {
+    background-color: #55697f;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #5f6e7d;
+}
 
 footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+}
+a.btn-primary {
+    text-decoration: none;
+}
+
+.btn-volver {
+    background-color: #55697f;
+    border: none;
+    padding: 6px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block; 
+    line-height: 1;
+    transition: filter 0.3s;
+}
+
+.btn-volver:hover {
+    filter: brightness(90%);
+}
+
+.habitacion-pantalla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.habitacion-caja {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.habitacion-descripcion,
+.habitacion-pista {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.habitacion-imagen img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.habitacion-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.habitacion-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.habitacion-boton {
+    background-color: #55697f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.habitacion-boton:hover {
+    background-color: #6b7e95;
+}
+
+.habitacion-error {
+    color: #ff6666;
+    margin-top: 10px;
 }

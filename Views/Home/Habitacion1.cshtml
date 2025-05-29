@@ -1,20 +1,27 @@
-@model TP05_Kampel_Pita.Models.Habitacion
+<div class="habitacion-pantalla">
+    <div class="habitacion-caja">
+        <p class="habitacion-descripcion">@Model.Descripcion</p>
+        <p class="habitacion-pista">@Model.Pista</p>
 
-<h2>Habitación @Model.Numero</h2>
-<p>@Model.Descripcion</p>
-<p>@Model.Pista</p>
+        <div class="habitacion-imagen">
+            <img src="/img/Habitacion1.webp" alt="imagen pista" />
+        </div>
 
-<div>
-    <img src="@Model.Imagenes[0]" alt="foto" width="300" />
-    <img src="@Model.Imagenes[1]" alt="foto" width="300" />
+        <form method="post" asp-action="ResolverHabitacion" class="habitacion-formulario">
+            <label for="respuesta">Palabra clave:</label>
+            <input type="text" name="respuesta" id="respuesta" class="habitacion-input" required />
+            
+            <!-- Campo oculto para enviar el número de la habitación -->
+            <input type="hidden" name="habitacionNumero" value="@Model.Numero" />
+
+            <button type="submit" class="habitacion-boton">Enviar</button>
+        </form>
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="habitacion-error">@ViewBag.Error</p>
+        }
+    </div>
 </div>
 
-<form method="post" asp-action="ResolverHabitacion">
-    <input type="hidden" name="habitacionNumero" value="1" />
-    <label>Palabra clave:</label>
-    <input type="text" name="respuesta" />
-    <button type="submit">Enviar</button>
-</form>
-@if(ViewBag.Error != null) {
-    <p style="color:red">@ViewBag.Error</p>
-}
+

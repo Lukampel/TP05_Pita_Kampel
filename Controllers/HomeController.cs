@@ -9,6 +9,21 @@ namespace ElOrfanatoOlvidado.Controllers
     {
         private const string SessionKey = "SalaDeEscape";
 
+        public IActionResult Historia()
+{
+    return View();
+}
+
+public IActionResult Reglas()
+{
+    return View();
+}
+
+public IActionResult Integrantes()
+{
+    return View();
+}
+
         public IActionResult Index()
         {
             var salaDeEscape = new SalaDeEscape();
@@ -64,7 +79,7 @@ namespace ElOrfanatoOlvidado.Controllers
             switch (habitacionNumero)
             {
                 case 1:
-                    correcta = respuesta?.ToLower() == "juguetes";
+                    correcta = respuesta?.ToLower() == "fuego";
                     if (correcta) salaDeEscape.CodigoHabitacion1 = respuesta;
                     break;
                 case 2:
@@ -95,7 +110,6 @@ namespace ElOrfanatoOlvidado.Controllers
             ViewBag.Error = "Respuesta incorrecta, intenta nuevamente.";
             HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
 
-            // Para que el error se vea, mejor devolver la vista actual con modelo y ViewBag
             switch (habitacionNumero)
             {
                 case 1:
@@ -121,16 +135,15 @@ namespace ElOrfanatoOlvidado.Controllers
             return View("Perdio");
         }
 
-        // Métodos para generar datos de habitaciones
         private Habitacion GenerarDatosHabitacion1()
         {
             return new Habitacion
             {
                 Numero = 1,
-                Descripcion = "Encuentra las diferencias entre estas dos imágenes y forma la palabra clave.",
+                Descripcion = "¡Llegaste a la recepción del orfanato!",
                 Imagenes = new[] { "/images/habitacion1a.jpg", "/images/habitacion1b.jpg" },
-                Pista = "Encuentra las diferencias para lograr escapar...",
-                RespuestaCorrecta = "juguetes"
+                Pista = "Encuentra el codigo y decifra la palabra clave para escapar...",
+                RespuestaCorrecta = "fuego"
             };
         }
 

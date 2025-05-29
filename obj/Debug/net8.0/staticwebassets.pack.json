@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\Habitacion1.webp",
+      "PackagePath": "staticwebassets\\img\\Habitacion1.webp"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\LU.png",
+      "PackagePath": "staticwebassets\\img\\LU.png"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\RAMI.png",
+      "PackagePath": "staticwebassets\\img\\RAMI.png"
+    },
+    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\orfanato.png",
       "PackagePath": "staticwebassets\\img\\orfanato.png"
     },

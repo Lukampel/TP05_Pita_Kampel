@@ -8,10 +8,10 @@ public class SalaDeEscape
     public DateTime TiempoInicio { get; set; } = DateTime.Now;
     public TimeSpan TiempoLimite { get; set; } = TimeSpan.FromMinutes(60);
 
-        public string CodigoHabitacion1 { get; set; } // palabra clave 1
-        public string CodigoHabitacion2 { get; set; } // palabra clave 2
-        public string CodigoHabitacion3 { get; set; } // palabra clave 3
-        public string CodigoHabitacion4 { get; set; } // palabra clave 4
+        public string CodigoHabitacion1 { get; set; } 
+        public string CodigoHabitacion2 { get; set; } 
+        public string CodigoHabitacion3 { get; set; } 
+        public string CodigoHabitacion4 { get; set; } 
 
     public bool tiempoTerminado()
     {
