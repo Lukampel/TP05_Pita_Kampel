@@ -10,19 +10,27 @@ namespace ElOrfanatoOlvidado.Controllers
         private const string SessionKey = "SalaDeEscape";
 
         public IActionResult Historia()
-{
-    return View();
-}
+        {
+            return View();
+        }
 
-public IActionResult Reglas()
-{
-    return View();
-}
+        public IActionResult Reglas()
+        {
+            return View();
+        }
+        public IActionResult Traductor()
+        {
+            return View();
+        }
 
-public IActionResult Integrantes()
-{
-    return View();
-}
+        public IActionResult Habitacion1()
+        {
+            return RedirectToAction("Habitacion");
+        }
+        public IActionResult Integrantes()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {
@@ -79,7 +87,7 @@ public IActionResult Integrantes()
             switch (habitacionNumero)
             {
                 case 1:
-                    correcta = respuesta?.ToLower() == "fuego";
+                    correcta = respuesta?.ToLower() == "humo";
                     if (correcta) salaDeEscape.CodigoHabitacion1 = respuesta;
                     break;
                 case 2:
@@ -141,9 +149,10 @@ public IActionResult Integrantes()
             {
                 Numero = 1,
                 Descripcion = "¡Llegaste a la recepción del orfanato!",
+                Adivinanza = "Soy hijo de un banquete ardiente, nací sin carne, fui transparente. Subo al cielo sin tener alas, me disuelvo donde no hay balas. No dejo huella donde reposo, y aunque me ves, no soy hermoso. ¿Qué soy ? ",
                 Imagenes = new[] { "/images/habitacion1a.jpg", "/images/habitacion1b.jpg" },
                 Pista = "Encuentra el codigo y decifra la palabra clave para escapar...",
-                RespuestaCorrecta = "fuego"
+                RespuestaCorrecta = "humo"
             };
         }
 

@@ -2,18 +2,23 @@
     <div class="habitacion-caja">
         <p class="habitacion-descripcion">@Model.Descripcion</p>
         <p class="habitacion-pista">@Model.Pista</p>
+        <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
         <div class="habitacion-imagen">
-            <img src="/img/Habitacion1.webp" alt="imagen pista" />
+            <!-- Imagen con mapa -->
+            <img src="/img/Habitacion1.webp" alt="imagen pista" usemap="#mapaHabitacion1" />
+
+          
+            <map name="mapaHabitacion1">
+
+                <area shape="rect" coords="500,210,575,330" href="Traductor" alt="Ir al traductor" />
+            </map>
         </div>
 
         <form method="post" asp-action="ResolverHabitacion" class="habitacion-formulario">
             <label for="respuesta">Palabra clave:</label>
             <input type="text" name="respuesta" id="respuesta" class="habitacion-input" required />
-            
-            <!-- Campo oculto para enviar el número de la habitación -->
             <input type="hidden" name="habitacionNumero" value="@Model.Numero" />
-
             <button type="submit" class="habitacion-boton">Enviar</button>
         </form>
 

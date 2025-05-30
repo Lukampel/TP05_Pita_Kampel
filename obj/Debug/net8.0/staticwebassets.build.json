@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BstIvuOWkY1uuoWuCIDPQMAk2PXuDXJ3nBEv1i7cPp0=",
+  "Hash": "bGGFb6TviORgC1eTQGbuyPweX7AE9HhRMjcNO+buswM=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\RAMI.png"
+    },
+    {
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\traductor.png",
+      "SourceId": "PrimerProyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\",
+      "BasePath": "_content/PrimerProyecto",
+      "RelativePath": "img/traductor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\traductor.png"
     },
     {
       "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\js\\site.js",

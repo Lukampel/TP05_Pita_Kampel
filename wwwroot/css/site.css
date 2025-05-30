@@ -117,44 +117,60 @@ a.btn-primary {
     filter: brightness(90%);
 }
 
+
+
 .habitacion-pantalla {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    background-image: url('/img/orfanato.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
+
 .habitacion-caja {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     color: white;
-    max-width: 600px;
-    width: 90%;
-    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
+
 .habitacion-descripcion,
-.habitacion-pista {
+.habitacion-pista, .habitacion-Adivinanza{
     font-size: 20px;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #000;
 }
+
 
 .habitacion-imagen img {
     width: 100%;
-    max-width: 400px;
-    border: 2px solid #ccc;
+    max-width: 650px; 
     border-radius: 8px;
-    margin-bottom: 20px;
+    border: 2px solid #aaa;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
 
 .habitacion-formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
+
 
 .habitacion-input {
     padding: 10px;
@@ -163,8 +179,8 @@ a.btn-primary {
     border: none;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
 }
+
 
 .habitacion-boton {
     background-color: #55697f;
@@ -174,14 +190,36 @@ a.btn-primary {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 .habitacion-boton:hover {
     background-color: #6b7e95;
 }
 
+
 .habitacion-error {
     color: #ff6666;
     margin-top: 10px;
+    font-weight: bold;
 }
+.habitacion-imagen {
+    position: relative;
+    display: inline-block;
+}
+
+.link-traductor {
+    position: absolute;
+    top: 27.5%; 
+    left: 76%;
+    width: 10%;
+    height: 22%;
+    cursor: pointer;
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+}
+
+.link-traductor img {
+    display: none;
+}
+

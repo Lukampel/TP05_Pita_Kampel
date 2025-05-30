@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\orfanato.png"
     },
     {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\traductor.png",
+      "PackagePath": "staticwebassets\\img\\traductor.png"
+    },
+    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
