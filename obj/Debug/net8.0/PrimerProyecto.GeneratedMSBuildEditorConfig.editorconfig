@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2025\PROG2025\TP05-Pita-Kampel\TP05_Kampel_Pita
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Carta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Gano.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYW5vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

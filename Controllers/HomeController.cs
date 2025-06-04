@@ -31,6 +31,10 @@ namespace ElOrfanatoOlvidado.Controllers
         {
             return View();
         }
+        public IActionResult Carta()
+{
+    return View();
+}
 
         public IActionResult Index()
         {
@@ -91,7 +95,7 @@ namespace ElOrfanatoOlvidado.Controllers
                     if (correcta) salaDeEscape.CodigoHabitacion1 = respuesta;
                     break;
                 case 2:
-                    correcta = respuesta?.ToLower() == "abc";
+                    correcta = respuesta?.ToLower() == "3313";
                     if (correcta) salaDeEscape.CodigoHabitacion2 = respuesta;
                     break;
                 case 3:
@@ -163,8 +167,14 @@ namespace ElOrfanatoOlvidado.Controllers
                 Numero = 2,
                 Descripcion = "Adivina los objetos según las pistas y obtén la palabra clave.",
                 Pista = "Cada objeto vale una letra según su posición en el abecedario.",
-                RespuestaCorrecta = "abc"
+                RespuestaCorrecta = "3313"
             };
+        }
+
+        public IActionResult Habitacion3()
+        {
+            Habitacion h3 = GenerarDatosHabitacion3();
+            return View(h3);
         }
 
         private Habitacion GenerarDatosHabitacion3()
@@ -172,8 +182,9 @@ namespace ElOrfanatoOlvidado.Controllers
             return new Habitacion
             {
                 Numero = 3,
-                Descripcion = "Descifra la palabra clave en la carta del exdirector.",
-                Pista = "Observa las letras en negrita y rojo.",
+                Descripcion = "El silencio es pesado en esta habitación. Entre las sombras, un viejo escritorio parece guardar secretos de tiempos olvidados...",
+                Pista = "A veces, las respuestas más importantes están escritas en tinta invisible...",
+                Adivinanza = "¿Qué historias ocultas aguardan ser descubiertas?",
                 RespuestaCorrecta = "clave"
             };
         }

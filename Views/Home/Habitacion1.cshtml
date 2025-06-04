@@ -1,3 +1,5 @@
+@model TP05_Kampel_Pita.Models.Habitacion
+
 <div class="habitacion-pantalla">
     <div class="habitacion-caja">
         <p class="habitacion-descripcion">@Model.Descripcion</p>
@@ -5,10 +7,10 @@
         <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
         <div class="habitacion-imagen">
-            <!-- Imagen con mapa -->
+            
             <img src="/img/Habitacion1.webp" alt="imagen pista" usemap="#mapaHabitacion1" />
 
-          
+           
             <map name="mapaHabitacion1">
 
                 <area shape="rect" coords="500,210,575,330" href="Traductor" alt="Ir al traductor" />
@@ -26,6 +28,8 @@
         {
             <p class="habitacion-error">@ViewBag.Error</p>
         }
+
+        <a href="@Url.Action("Index", "Home")" class="btn-volver">Volver al Inicio</a>
     </div>
 </div>
 

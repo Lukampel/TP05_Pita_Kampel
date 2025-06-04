@@ -1,24 +1,53 @@
-@model TP05_Kampel_Pita.Models.Habitacion
+@{
+    ViewData["Title"] = "Habitación 4 - El Laboratorio";
+}
 
+<div class="habitacion4-container">
+    <div class="habitacion4-content">
+        <h1 class="titulo-habitacion">LABORATORIO SECRETO</h1>
 
-<p>@Model.Descripcion</p>
-<p>@Model.Pista</p>
+        <div class="descripcion">
+            <p>Has descubierto un laboratorio oculto. Pantallas verdes parpadean en la oscuridad, mostrando secuencias de código y fórmulas incomprensibles. El zumbido de equipos antiguos llena el aire.</p>
+        </div>
 
-@for(int i = 0; i < Model.Audios.Length; i++) {
-    <div>
-        <p>Caja musical @(i+1)</p>
-        <audio controls>
-            <source src="@Model.Audios[i]" type="audio/mpeg">Tu navegador no soporta audio.
-        </audio>
+        <div class="pista">
+            <p>SISTEMA: /iniciando_secuencia_de_acceso/</p>
+            <p>Los números tienen un significado oculto... La secuencia es la clave.</p>
+        </div>
+
+        <div class="acertijos">
+            <p>EJECUTANDO PROTOCOLO DE SEGURIDAD...</p>
+            <pre>
+01000101 01101110 
+01110100 01110010 
+01100101 00100000
+            </pre>
+            <p>Para acceder al sistema central, descifra:</p>
+            <ol>
+                <li>Soy binario pero no soy número</li>
+                <li>Me ejecuto pero no me muevo</li>
+                <li>Proceso todo pero nada comprendo</li>
+            </ol>
+        </div>
+
+        <form asp-controller="Home" asp-action="VerificarHabitacion4" method="post" class="form-respuesta">
+            <div class="input-container" data-tooltip="Ingresa el código de acceso">
+                <input type="text" 
+                       required
+                       name="respuesta"
+                       placeholder="INGRESE_CÓDIGO_DE_ACCESO>"
+                       autocomplete="off" />
+            </div>
+            <button type="submit">EJECUTAR_SECUENCIA</button>
+        </form>
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="error">
+                <pre>ERROR: @TempData["Error"]</pre>
+            </div>
+        }
+
+        <a href="@Url.Action("Index", "Home")" class="btn-volver">SALIR_DEL_SISTEMA</a>
     </div>
-}
-
-<form method="post" asp-action="ResolverHabitacion">
-    <input type="hidden" name="habitacionNumero" value="4" />
-    <label>Palabra clave:</label>
-    <input type="text" name="respuesta" />
-    <button type="submit">Enviar</button>
-</form>
-@if(ViewBag.Error != null) {
-    <p style="color:red">@ViewBag.Error</p>
-}
+</div>

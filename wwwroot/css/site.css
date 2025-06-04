@@ -117,8 +117,6 @@ a.btn-primary {
     filter: brightness(90%);
 }
 
-
-
 .habitacion-pantalla {
     display: flex;
     justify-content: center;
@@ -133,18 +131,16 @@ a.btn-primary {
     padding: 20px;
 }
 
-
 .habitacion-caja {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     color: white;
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
-
 
 .habitacion-descripcion,
 .habitacion-pista, .habitacion-Adivinanza{
@@ -153,24 +149,55 @@ a.btn-primary {
     text-shadow: 1px 1px 3px #000;
 }
 
+.habitacion-imagen {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
 .habitacion-imagen img {
     width: 100%;
-    max-width: 650px; 
-    border-radius: 8px;
-    border: 2px solid #aaa;
-    margin-bottom: 25px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    height: auto;
+    display: block;
 }
 
+.habitacion-imagen area {
+    cursor: pointer;
+}
+
+/* Efecto sutil para indicar el área clickeable */
+.habitacion-imagen:hover {
+    position: relative;
+}
+
+.habitacion-imagen:hover::after {
+    content: 'Click para examinar más de cerca';
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 .habitacion-formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-bottom: 1rem;
 }
-
 
 .habitacion-input {
     padding: 10px;
@@ -180,7 +207,6 @@ a.btn-primary {
     width: 100%;
     max-width: 400px;
 }
-
 
 .habitacion-boton {
     background-color: #55697f;
@@ -196,15 +222,10 @@ a.btn-primary {
     background-color: #6b7e95;
 }
 
-
 .habitacion-error {
     color: #ff6666;
     margin-top: 10px;
     font-weight: bold;
-}
-.habitacion-imagen {
-    position: relative;
-    display: inline-block;
 }
 
 .link-traductor {
@@ -222,4 +243,690 @@ a.btn-primary {
 .link-traductor img {
     display: none;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('/img/fondo-orfanato.png'); /* Fondo sugerido */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.habitacion2-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/fondo-orfanato.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.habitacion2-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #4a90e2;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.habitacion2-content .titulo-habitacion {
+    color: #4a90e2;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.habitacion2-content .descripcion {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.habitacion2-content .pista {
+    background-color: rgba(74, 144, 226, 0.1);
+    border-left: 4px solid #4a90e2;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: #4a90e2;
+    font-style: italic;
+}
+
+.habitacion2-content .acertijos {
+    background: rgba(74, 144, 226, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.habitacion2-content .acertijos ol {
+    color: #ffffff;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.habitacion2-content .acertijos li {
+    margin-bottom: 1rem;
+}
+
+.habitacion2-content .acertijos b {
+    color: #4a90e2;
+    font-size: 1.2rem;
+}
+
+.habitacion2-content .form-respuesta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.habitacion2-content .form-respuesta input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #4a90e2;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.habitacion2-content .form-respuesta input[type="text"]:focus {
+    border-color: #66a5e6;
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+    outline: none;
+}
+
+.habitacion2-content .form-respuesta button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.habitacion2-content .form-respuesta button:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+.habitacion2-content .error {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+    border: 1px solid #ff4d4d;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.habitacion2-content .btn-volver {
+    background-color: transparent;
+    border: 1px solid #4a90e2;
+    color: #4a90e2;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.habitacion2-content .btn-volver:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.habitacion3-container {
+    background: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.habitacion3-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.habitacion3-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #8B4513;
+    box-shadow: 0 0 30px rgba(139, 69, 19, 0.3);
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem;
+}
+
+.habitacion3-content .habitacion-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.habitacion3-content .habitacion-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.habitacion3-content .titulo-habitacion {
+    color: #d4af37;
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.habitacion3-content .descripcion {
+    font-family: 'Times New Roman', serif;
+    color: #e6d5b8;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.habitacion3-content .pista {
+    background-color: rgba(139, 69, 19, 0.3);
+    border-left: 4px solid #d4af37;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #ffd700;
+}
+
+.habitacion3-content .acertijos {
+    background: rgba(41, 25, 12, 0.7);
+    border: 1px solid #8B4513;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+.habitacion3-content .acertijos ol {
+    color: #e6d5b8;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-left: 1.5rem;
+}
+
+.habitacion3-content .acertijos li {
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.habitacion3-content .form-respuesta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.habitacion3-content .form-respuesta input[type="text"] {
+    background-color: rgba(41, 25, 12, 0.9);
+    border: 2px solid #8B4513;
+    color: #e6d5b8;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.habitacion3-content .form-respuesta input[type="text"]:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    outline: none;
+}
+
+.habitacion3-content .form-respuesta button {
+    background-color: #8B4513;
+    color: #e6d5b8;
+    border: 2px solid #d4af37;
+    padding: 0.8rem 2rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+}
+
+.habitacion3-content .form-respuesta button:hover {
+    background-color: #d4af37;
+    color: #291912;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
+}
+
+.habitacion3-content .error {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-family: 'Times New Roman', serif;
+}
+
+.habitacion3-content .btn-volver {
+    background-color: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.habitacion3-content .btn-volver:hover {
+    background-color: #d4af37;
+    color: #291912;
+}
+
+.habitacion4-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/laboratorio.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.habitacion4-content {
+    background-color: rgba(25, 25, 25, 0.95);
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+}
+
+.habitacion4-content .titulo-habitacion {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.form-respuesta {
+    margin-top: 25px;
+}
+
+.form-respuesta input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-respuesta input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-respuesta button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.habitacion2-content .form-respuesta button {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.habitacion3-content .form-respuesta button {
+    background-color: #d4af37;
+    color: black;
+}
+
+.habitacion4-content .form-respuesta button {
+    background-color: #003300;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+.habitacion2-content .form-respuesta button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+.habitacion3-content .form-respuesta button:hover {
+    background-color: #c19b30;
+    transform: scale(1.05);
+}
+
+.habitacion4-content .form-respuesta button:hover {
+    background-color: #004400;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.habitacion2-content .error {
+    color: #ff4d4d;
+}
+
+.habitacion3-content .error {
+    color: #ffa07a;
+}
+
+.habitacion4-content .error {
+    color: #ff6b6b;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+}
+
+.form-respuesta input[type="text"]:focus {
+    animation: glow 2s infinite;
+}
+
+/* Estilos para campos requeridos */
+.form-respuesta input[type="text"][required] {
+    border-left: 4px solid #ff4d4d;
+}
+
+.form-respuesta input[type="text"][required]:valid {
+    border-left: 4px solid #4CAF50;
+}
+
+/* Indicador de campo requerido */
+.form-respuesta .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-respuesta .input-container::after {
+    content: "*";
+    color: #ff4d4d;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+/* Estilos específicos para cada habitación */
+.habitacion2-content .form-respuesta input[type="text"][required] {
+    border-left-color: #4a90e2;
+}
+
+.habitacion3-content .form-respuesta input[type="text"][required] {
+    border-left-color: #d4af37;
+}
+
+.habitacion4-content .form-respuesta input[type="text"][required] {
+    border-left-color: #00ff00;
+}
+
+/* Mensajes de validación personalizados */
+.form-respuesta input[type="text"][required]:invalid {
+    box-shadow: none;
+}
+
+.form-respuesta input[type="text"][required]:invalid:focus {
+    border-left-color: #ff4d4d;
+}
+
+/* Tooltips para campos requeridos */
+.form-respuesta .input-container[data-tooltip] {
+    position: relative;
+}
+
+.form-respuesta .input-container[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.form-respuesta .input-container:hover[data-tooltip]::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos específicos para tooltips por habitación */
+.habitacion2-content .input-container[data-tooltip]::before {
+    background-color: rgba(74, 144, 226, 0.9);
+}
+
+.habitacion3-content .input-container[data-tooltip]::before {
+    background-color: rgba(212, 175, 55, 0.9);
+}
+
+.habitacion4-content .input-container[data-tooltip]::before {
+    background-color: rgba(0, 255, 0, 0.2);
+    border: 1px solid #00ff00;
+}
+
+/* Animación de shake para validación fallida */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.form-respuesta input[type="text"][required]:invalid:focus {
+    animation: shake 0.3s ease-in-out;
+}
+
+/* Placeholder personalizado para campos requeridos */
+.form-respuesta input[type="text"][required]::placeholder {
+    color: rgba(255, 77, 77, 0.6);
+}
+
+.habitacion2-content .form-respuesta input[type="text"][required]::placeholder {
+    color: rgba(74, 144, 226, 0.6);
+}
+
+.habitacion3-content .form-respuesta input[type="text"][required]::placeholder {
+    color: rgba(212, 175, 55, 0.6);
+}
+
+.habitacion4-content .form-respuesta input[type="text"][required]::placeholder {
+    color: rgba(0, 255, 0, 0.6);
+}
+
+/* Estilos para el botón volver en Habitación 1 */
+.habitacion-caja .btn-volver {
+    background-color: transparent;
+    border: 2px solid #55697f;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.habitacion-caja .btn-volver:hover {
+    background-color: #55697f;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(85, 105, 127, 0.4);
+}
+
+/* Estilos para la vista de la carta */
+.carta-content {
+    background-color: rgba(41, 25, 12, 0.95);
+    border: 3px solid #d4af37;
+    padding: 3rem;
+}
+
+.carta-texto {
+    background: url('/img/papel-antiguo.png');
+    padding: 2rem;
+    border-radius: 8px;
+    color: #291912;
+    font-family: 'Times New Roman', serif;
+    position: relative;
+}
+
+.carta-texto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.carta-content .acertijos {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.carta-content .acertijos ol {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.carta-content .acertijos li {
+    margin-bottom: 1rem;
+    color: #291912;
+}
+
+/* Efecto hover para el área clickeable */
+area {
+    cursor: pointer;
+}
+
+area:hover + .hover-hint {
+    display: block;
+}
+
+/* Habitación 3 - Pantalla ajustada */
+.habitacion3-fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80vh;
+    overflow: hidden;
+    border: 2px solid #8B4513;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.habitacion3-fullscreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.habitacion3-fullscreen .btn-volver {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.habitacion3-fullscreen .btn-volver:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilo para resaltar sutilmente el área clickeable */
+.habitacion3-fullscreen area {
+    cursor: pointer;
+}
+
+.habitacion3-fullscreen .carta-hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.habitacion3-fullscreen area:hover + .carta-hint {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
 

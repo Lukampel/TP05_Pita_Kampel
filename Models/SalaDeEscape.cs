@@ -1,4 +1,3 @@
-
 public class SalaDeEscape
 {
     public int numHabitacion { get; set; } = 1;
@@ -8,10 +7,10 @@ public class SalaDeEscape
     public DateTime TiempoInicio { get; set; } = DateTime.Now;
     public TimeSpan TiempoLimite { get; set; } = TimeSpan.FromMinutes(60);
 
-        public string CodigoHabitacion1 { get; set; } 
-        public string CodigoHabitacion2 { get; set; } 
-        public string CodigoHabitacion3 { get; set; } 
-        public string CodigoHabitacion4 { get; set; } 
+    public string CodigoHabitacion1 { get; set; } = string.Empty;
+    public string CodigoHabitacion2 { get; set; } = string.Empty;
+    public string CodigoHabitacion3 { get; set; } = string.Empty;
+    public string CodigoHabitacion4 { get; set; } = string.Empty;
 
     public bool tiempoTerminado()
     {

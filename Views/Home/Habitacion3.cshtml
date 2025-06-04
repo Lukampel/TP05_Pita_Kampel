@@ -1,23 +1,30 @@
- @model TP05_Kampel_Pita.Models.Habitacion
+@model TP05_Kampel_Pita.Models.Habitacion
 
+<div class="habitacion-pantalla">
+    <div class="habitacion-caja">
+        <p class="habitacion-descripcion">@Model.Descripcion</p>
+        <p class="habitacion-pista">@Model.Pista</p>
+        <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
-<p>@Model.Descripcion</p>
-<p>@Model.Pista</p>
+        <div class="habitacion-imagen">
+            <img src="/img/Habitacion3.png" alt="Habitación abandonada" usemap="#mapaHabitacion3" />
+            <map name="mapaHabitacion3">
+                <area shape="rect" coords="250,180,400,300" href="@Url.Action("Carta", "Home")" alt="Ver carta" />
+            </map>
+        </div>
 
-<div style="border:1px solid gray; padding:1em; width:50%">
-    <p>Querido visitante,<br>
-    Me <b>s</b>iento orgulloso de ver <b>c</b>ómo ha crecido este lugar.<br>
-    Pero <span style="color:red">l</span>as memorias persisten. Si <b>a</b>lguien llega a encontrar esto,<br>
-    sabrá <span style="color:red">v</span>erdades que yacen bajo el polvo.<br>
-    Nunca olvides que la <b>e</b>speranza puede abrir puertas ocultas.</p>
+        <form method="post" asp-action="ResolverHabitacion" class="habitacion-formulario">
+            <input type="hidden" name="habitacionNumero" value="3" />
+            <label for="respuesta">Palabra clave:</label>
+            <input type="text" name="respuesta" id="respuesta" class="habitacion-input" required />
+            <button type="submit" class="habitacion-boton">Enviar</button>
+        </form>
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="habitacion-error">@ViewBag.Error</p>
+        }
+
+        <a href="@Url.Action("Index", "Home")" class="btn-volver">Volver al Inicio</a>
+    </div>
 </div>
-
-<form method="post" asp-action="ResolverHabitacion">
-    <input type="hidden" name="habitacionNumero" value="3" />
-    <label>Palabra clave:</label>
-    <input type="text" name="respuesta" />
-    <button type="submit">Enviar</button>
-</form>
-@if(ViewBag.Error != null) {
-    <p style="color:red">@ViewBag.Error</p>
-}

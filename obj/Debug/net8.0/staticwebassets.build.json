@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bGGFb6TviORgC1eTQGbuyPweX7AE9HhRMjcNO+buswM=",
+  "Hash": "lbDtHAOekxwBEuArj5a4WYkdCacFAR279uodPKDUW48=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Habitacion1.webp"
+    },
+    {
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\Habitacion3.png",
+      "SourceId": "PrimerProyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\",
+      "BasePath": "_content/PrimerProyecto",
+      "RelativePath": "img/Habitacion3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Habitacion3.png"
     },
     {
       "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\LU.png",
