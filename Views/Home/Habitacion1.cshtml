@@ -1,21 +1,17 @@
-@model TP05_Kampel_Pita.Models.Habitacion
-
 <div class="habitacion-pantalla">
     <div class="habitacion-caja">
         <p class="habitacion-descripcion">@Model.Descripcion</p>
         <p class="habitacion-pista">@Model.Pista</p>
         <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
-        <div class="habitacion-imagen">
-            
-            <img src="/img/Habitacion1.webp" alt="imagen pista" usemap="#mapaHabitacion1" />
+        <div class="habitacion-imagen" style="position: relative;">
+    <img src="/img/Habitacion1.webp" alt="Habitación 1" />
 
-           
-            <map name="mapaHabitacion1">
+    <a href="@Url.Action("Traductor", "Home")" class="btn-traductor">
+        <img src="/img/traductor.png" alt="Ir al traductor" />
+    </a>
+</div>
 
-                <area shape="rect" coords="500,210,575,330" href="Traductor" alt="Ir al traductor" />
-            </map>
-        </div>
 
         <form method="post" asp-action="ResolverHabitacion" class="habitacion-formulario">
             <label for="respuesta">Palabra clave:</label>
@@ -32,5 +28,4 @@
         <a href="@Url.Action("Index", "Home")" class="btn-volver">Volver al Inicio</a>
     </div>
 </div>
-
 

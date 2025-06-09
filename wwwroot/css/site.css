@@ -929,4 +929,117 @@ area:hover + .hover-hint {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
+.letra-marcada {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.carta-caja {
+    background: rgba(40, 30, 20, 0.92);
+    border: 2px solid #bfa76f;
+    box-shadow: 0 0 30px rgba(191, 167, 111, 0.2);
+    border-radius: 18px;
+    padding: 48px 36px;
+    color: #f5ecd7;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.carta-caja::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    pointer-events: none;
+    box-shadow: 0 0 60px 10px rgba(191, 167, 111, 0.15) inset;
+}
+
+.carta-descripcion {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 2px #0008;
+}
+
+.carta-pista {
+    background: rgba(191, 167, 111, 0.08);
+    border-left: 4px solid #bfa76f;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: #bfa76f;
+    font-style: italic;
+    border-radius: 6px;
+}
+
+.carta-boton {
+    background-color: #bfa76f;
+    color: #2d2212;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.carta-boton:hover {
+    background-color: #e5d3a3;
+}
+
+.carta-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 1px solid #bfa76f;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    background: #f5ecd7;
+    color: #2d2212;
+    font-family: inherit;
+}
+
+.carta-error {
+    color: #ff6666;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.habitacion-imagen {
+    position: relative;
+}
+
+
+.btn-traductor {
+    position: absolute;
+    bottom: 60%;
+    right: 8%;
+    width: 80px;       /* O el tamaño que necesites */
+    height: 80px;
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+    background: transparent;  /* Sin fondo visible */
+    border: none;             /* Sin bordes visibles */
+}
+
+/* Oculta la imagen pero mantiene el botón activo */
+.btn-traductor img {
+    display: none;
+}
+
+
+
+
+
+
+
+
 

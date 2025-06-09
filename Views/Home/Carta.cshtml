@@ -2,43 +2,42 @@
     ViewData["Title"] = "Carta Misteriosa";
 }
 
-<div class="habitacion3-container">
-    <div class="habitacion3-content carta-content">
+<div class="habitacion-pantalla">
+    <div class="carta-caja">
         <h1 class="titulo-habitacion">Carta Misteriosa</h1>
-
-        <div class="carta-texto">
+        <div class="carta-descripcion">
             <div class="descripcion">
-                <p>Al tomar la carta del escritorio, descubres que contiene una serie de enigmas escritos con una caligrafía antigua...</p>
+                <p>
+                    Estimado personal,<br/>
+                    Me dirijo a ustedes para informarles sobre algunos <span class="letra-marcada">f</span>enómenos inusuales que han estado ocurriendo en el hotel. Últimamente, los hú<span class="letra-marcada">e</span>spedes y empleados han reportado ruidos extraños y objetos que cambian de lugar sin explicación. Les pido que mantengan la calma y que, ante cualquier situación sospechosa, lo comuniquen de inmediato a la administración.<br/>
+                    Recuerden que la gestión de la seguridad es nuestra prioridad y que debemos actuar con responsabilidad. No olviden revisar las salidas de emergencia y asegurarse de que todo esté en <span class="letra-marcada">o</span>rden. Si notan algo grave, no duden en avisar.<br/>
+                    Unidos podremos s<span class="letra-marcada">u</span>perar cualquier obstáculo. Confío en su profesionalismo y dedicación.<br/>
+                    Por favor, mantengan la vigilancia especialmente en los pasillos del segundo piso.<br/>
+                    Algunos han notado un olor extraño cerca de la cocina.<br/>
+                    Si encuentran alguna pista re<span class="letra-marcada">g</span>istrada, comuníquenlo.<br/>
+                    Atentamente,<br/>
+                    El Director<br/>
+                </p>
             </div>
-
-            <div class="acertijos">
-                <p>Para avanzar, deberás resolver estos enigmas:</p>
-                <ol>
-                    <li>Soy guardián de historias, pero no puedo leer.</li>
-                    <li>Mis páginas están en blanco, pero contengo todo el saber.</li>
-                    <li>En la oscuridad brillo, en la luz me desvanezco.</li>
-                </ol>
-            </div>
-
-            <form asp-controller="Home" asp-action="VerificarHabitacion3" method="post" class="form-respuesta">
-                <div class="input-container" data-tooltip="Ingresa la respuesta al enigma">
-                    <input type="text" 
-                           required
-                           name="respuesta"
-                           placeholder="Escribe tu respuesta aquí..."
-                           autocomplete="off" />
-                </div>
-                <button type="submit">Revelar el Secreto</button>
-            </form>
-
-            @if (TempData["Error"] != null)
-            {
-                <div class="error">
-                    @TempData["Error"]
-                </div>
-            }
+            <style>
+                .letra-marcada {
+                    color: red;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            </style>
         </div>
-
+        <div class="carta-pista">
+            <p>¿Sucede algo extraño con esta carta?</p>
+        </div>
+        <form asp-controller="Home" asp-action="VerificarHabitacion3" method="post" class="habitacion-formulario">
+            <input type="text" name="respuesta" placeholder="Escribe tu respuesta aquí..." class="carta-input" required autocomplete="off" />
+            <button type="submit" class="carta-boton">Revelar el Secreto</button>
+        </form>
+        @if (TempData["Error"] != null)
+        {
+            <p class="carta-error">@TempData["Error"]</p>
+        }
         <a href="@Url.Action("Habitacion3", "Home")" class="btn-volver">Volver a la Habitación</a>
     </div>
 </div> 

@@ -6,10 +6,13 @@
         <p class="habitacion-pista">@Model.Pista</p>
         <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
-        <div class="habitacion-imagen">
+        <div class="habitacion-imagen" style="position: relative;">
             <img src="/img/Habitacion3.png" alt="Habitación abandonada" usemap="#mapaHabitacion3" />
+            <form method="get" action="@Url.Action("Traductor", "Home")" style="position: absolute; left: 1400px; top: 10px; width: 80px; height: 100px; margin: 0; padding: 0;">
+                <button type="submit" style="width: 100%; height: 100%; opacity: 0; border: none; background: none; cursor: pointer; position: absolute; left: 0; top: 0;">Ir al traductor</button>
+            </form>
             <map name="mapaHabitacion3">
-                <area shape="rect" coords="250,180,400,300" href="@Url.Action("Carta", "Home")" alt="Ver carta" />
+                <area shape="rect" coords="320,330,410,440" href="@Url.Action("Carta", "Home")" alt="Ver carta" />
             </map>
         </div>
 

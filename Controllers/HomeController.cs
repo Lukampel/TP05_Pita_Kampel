@@ -99,7 +99,7 @@ namespace ElOrfanatoOlvidado.Controllers
                     if (correcta) salaDeEscape.CodigoHabitacion2 = respuesta;
                     break;
                 case 3:
-                    correcta = respuesta?.ToLower() == "clave";
+                    correcta = respuesta?.ToLower() == "fuego";
                     if (correcta) salaDeEscape.CodigoHabitacion3 = respuesta;
                     break;
                 case 4:
@@ -185,7 +185,7 @@ namespace ElOrfanatoOlvidado.Controllers
                 Descripcion = "El silencio es pesado en esta habitación. Entre las sombras, un viejo escritorio parece guardar secretos de tiempos olvidados...",
                 Pista = "A veces, las respuestas más importantes están escritas en tinta invisible...",
                 Adivinanza = "¿Qué historias ocultas aguardan ser descubiertas?",
-                RespuestaCorrecta = "clave"
+                RespuestaCorrecta = "fuego"
             };
         }
 
