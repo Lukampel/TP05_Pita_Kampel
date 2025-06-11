@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lbDtHAOekxwBEuArj5a4WYkdCacFAR279uodPKDUW48=",
+  "Hash": "vsn/BS+XATK3QZk4lQ1kQD7pMjMrDyXeDKnGiPy90rQ=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\comedor.jpg",
+      "SourceId": "PrimerProyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\",
+      "BasePath": "_content/PrimerProyecto",
+      "RelativePath": "img/comedor.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\comedor.jpg"
     },
     {
       "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\Habitacion1.webp",

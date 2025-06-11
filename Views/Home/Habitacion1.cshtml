@@ -5,13 +5,12 @@
         <p class="habitacion-Adivinanza">@Model.Adivinanza</p>
 
         <div class="habitacion-imagen" style="position: relative;">
-    <img src="/img/Habitacion1.webp" alt="Habitación 1" />
+            <img src="/img/Habitacion1.webp" alt="Habitación 1" />
 
-    <a href="@Url.Action("Traductor", "Home")" class="btn-traductor">
-        <img src="/img/traductor.png" alt="Ir al traductor" />
-    </a>
-</div>
-
+            <a href="@Url.Action("Traductor", "Home")" class="btn-traductor" style="position: absolute; left: 85%; top: 30%; width: 80px; height: 80px; display: block;">
+                <img src="/img/traductor.png" alt="Ir al traductor" style="width: 100%; height: 100%; object-fit: contain; opacity: 0;" />
+            </a>
+        </div>
 
         <form method="post" asp-action="ResolverHabitacion" class="habitacion-formulario">
             <label for="respuesta">Palabra clave:</label>

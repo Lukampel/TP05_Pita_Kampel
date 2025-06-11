@@ -2,10 +2,12 @@
     ViewData["Title"] = "Carta Misteriosa";
 }
 
+
+
 <div class="habitacion-pantalla">
-    <div class="carta-caja">
+   <div class="carta-content">
         <h1 class="titulo-habitacion">Carta Misteriosa</h1>
-        <div class="carta-descripcion">
+        <div class="carta-texto">
             <div class="descripcion">
                 <p>
                     Estimado personal,<br/>
@@ -19,25 +21,10 @@
                     El Director<br/>
                 </p>
             </div>
-            <style>
-                .letra-marcada {
-                    color: red;
-                    font-weight: bold;
-                    text-decoration: underline;
-                }
-            </style>
         </div>
         <div class="carta-pista">
             <p>¿Sucede algo extraño con esta carta?</p>
         </div>
-        <form asp-controller="Home" asp-action="VerificarHabitacion3" method="post" class="habitacion-formulario">
-            <input type="text" name="respuesta" placeholder="Escribe tu respuesta aquí..." class="carta-input" required autocomplete="off" />
-            <button type="submit" class="carta-boton">Revelar el Secreto</button>
-        </form>
-        @if (TempData["Error"] != null)
-        {
-            <p class="carta-error">@TempData["Error"]</p>
-        }
         <a href="@Url.Action("Habitacion3", "Home")" class="btn-volver">Volver a la Habitación</a>
     </div>
 </div> 
