@@ -254,8 +254,11 @@ body {
     color: #ffffff;
 }
 
+/* Fondo principal con efecto de incendio fantasmal */
 .habitacion2-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/comedor.jpg'); /* Más oscuridad en el gradiente para resaltar el rojo */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+        url('/img/comedor.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -264,108 +267,214 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-  }
-  
-  .habitacion2-content {
-    background-color: rgba(35, 20, 20, 0.95); /* Fondo aún más oscuro y rojizo */
-    border: 2px solid #663333; /* Borde de un rojo óxido más apagado */
-    box-shadow: 0 0 25px rgba(50, 0, 0, 0.7); /* Sombra rojiza, como el resplandor de un fuego lejano */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de humo sutil en el fondo */
+.habitacion2-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, transparent 10%, rgba(50, 10, 5, 0.3) 40%),
+        radial-gradient(circle at 80% 70%, transparent 10%, rgba(30, 5, 0, 0.4) 40%);
+    pointer-events: none;
+    animation: smoke-drift 30s infinite alternate;
+}
+
+/* Contenedor de la carta con aspecto quemado */
+.habitacion2-content {
+    background-color: rgba(20, 10, 10, 0.85);
+    border: 1px solid #3a1a1a;
+    box-shadow: 
+        0 0 15px rgba(80, 10, 0, 0.5),
+        0 0 40px rgba(100, 20, 0, 0.2) inset;
     padding: 2.5rem;
-    border-radius: 15px;
+    border-radius: 8px;
     max-width: 800px;
     width: 100%;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-fish-skin.png"); /* Otra textura que puede simular quemaduras o suciedad */
-  }
-  
-  .habitacion2-content .titulo-habitacion {
-    color: #CC3333; /* Rojo quemado, un poco más vibrante para el título */
-    font-size: 2.6rem; /* Un poco más grande para destacar */
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    background-image: 
+        url("https://www.transparenttextures.com/patterns/black-paper.png"),
+        linear-gradient(rgba(30, 10, 10, 0.7), rgba(10, 5, 5, 0.9));
+    border-image: 
+        linear-gradient(to bottom, #3a1a1a, #1a0a0a, #3a1a1a) 1;
+}
+
+/* Efectos de quemaduras en los bordes */
+.habitacion2-content::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid transparent;
+    border-image: 
+        linear-gradient(
+            45deg,
+            transparent 45%,
+            #5a2a2a 48%,
+            transparent 55%
+        ) 1;
+    pointer-events: none;
+    z-index: -1;
+    animation: border-flicker 8s infinite;
+}
+
+/* Título con efecto de sangre seca */
+.habitacion2-content .titulo-habitacion {
+    color: #8d4a4a;
+    font-size: 2.4rem;
     text-align: center;
     margin-bottom: 1.8rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.95); /* Sombra más pronunciada */
-  }
-  
-  .habitacion2-content .descripcion,
-  .habitacion2-content .pista,
-  .habitacion2-content .acertijos ol,
-  .habitacion2-content .acertijos li {
-    color: #DDAAAA; /* Texto en un tono rojizo pálido, para que se lea mejor */
-  }
-  
-  .habitacion2-content .pista {
-    background-color: rgba(100, 20, 20, 0.2);
-    border-left: 4px solid #CC3333;
-    color: #CC3333 !important;
-  }
-  
-  .habitacion2-content .acertijos {
-    background: rgba(60, 10, 10, 0.4); /* Fondo de acertijos más oscuro y rojizo */
-    padding: 1.5rem;
-    border-radius: 8px;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(100, 0, 0, 0.3);
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* Efecto de mancha bajo el título */
+.habitacion2-content .titulo-habitacion::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5a2a2a, transparent);
+    margin: 0.5rem auto 0;
+}
+
+/* Texto principal con aspecto desvaído */
+.habitacion2-content .descripcion,
+.habitacion2-content .pista,
+.habitacion2-content .acertijos ol,
+.habitacion2-content .acertijos li {
+    color: #b8a6a6;
+    line-height: 1.7;
+    font-weight: 300;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Pista con efecto de mancha de sangre */
+.habitacion2-content .pista {
+    background-color: rgba(40, 10, 10, 0.4);
+    border-left: 3px solid #5a2a2a;
+    padding: 1.2rem;
     margin: 1.5rem 0;
-  }
-  
-  .habitacion2-content .form-respuesta input[type="text"] {
-    background-color: rgba(10, 10, 10, 0.9);
-    border: 2px solid #CC3333 !important;
-    color: #CC3333 !important;
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  .habitacion2-content .form-respuesta input[type="text"]:focus {
-    border-color: #992222 !important;
-    box-shadow: 0 0 20px rgba(204, 51, 51, 0.4);
-    color: #CC3333 !important;
-  }
-  
-  .habitacion2-content .form-respuesta button {
-    background-color: #CC3333 !important;
-    color: #FFF !important;
-    padding: 1rem 2.5rem; /* Botón un poco más grande */
-    font-size: 1.3rem;
-    border: none;
-  }
-  
-  .habitacion2-content .form-respuesta button:hover {
-    background-color: #992222 !important;
-    color: #FFF !important;
-    transform: scale(1.05);
-  }
-  
-  .habitacion2-content .error {
-    color: #FF9999; /* Rojo más claro para el error */
-    background-color: rgba(255, 100, 100, 0.2); /* Fondo del error con un toque rojizo */
-    border: 1px solid #FF9999;
-  }
-  
-  .habitacion2-content .btn-volver {
-    background-color: transparent;
-    border: 1px solid #CC3333; /* Borde rojo quemado */
-    color: #CC3333; /* Texto rojo quemado */
-    padding: 0.7rem 1.4rem;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+}
+
+.habitacion2-content .pista::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 10% 20%, transparent 95%, rgba(80, 10, 0, 0.1) 100%),
+        radial-gradient(circle at 90% 80%, transparent 95%, rgba(80, 10, 0, 0.1) 100%);
+    pointer-events: none;
+}
+
+/* Acertijos con aspecto de grabado antiguo */
+.habitacion2-content .acertijos {
+    background: rgba(30, 10, 10, 0.5);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+    border: 1px solid #2a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Input con aspecto de documento dañado */
+.habitacion2-content .form-respuesta input[type="text"] {
+    background-color: rgba(15, 5, 5, 0.8);
+    border: 1px solid #4a2a2a !important;
+    color: #b8a6a6 !important;
     font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.habitacion2-content .form-respuesta input[type="text"]:focus {
+    border-color: #5a2a2a !important;
+    box-shadow: 0 0 10px rgba(80, 10, 0, 0.3);
+    outline: none;
+}
+
+/* Botones con aspecto de metal oxidado */
+.habitacion2-content .form-respuesta button {
+    background: linear-gradient(to bottom, #5a2a2a, #3a1a1a) !important;
+    color: #d8c6c6 !important;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border: none !important;
+    border-radius: 3px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.habitacion2-content .form-respuesta button:hover {
+    background: linear-gradient(to bottom, #6a3a3a, #4a2a2a) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Mensaje de error */
+.habitacion2-content .error {
+    color: #b88a8a;
+    background-color: rgba(60, 20, 20, 0.4);
+    border: 1px solid #5a2a2a;
+    padding: 0.8rem;
+    border-radius: 3px;
+}
+
+/* Botón de volver con aspecto de objeto abandonado */
+.habitacion2-content .btn-volver {
+    background-color: transparent;
+    border: 1px solid #4a2a2a;
+    color: #b8a6a6;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
     margin-top: 2.5rem;
     display: inline-block;
-    border-radius: 6px; /* Borde un poco más redondeado */
-  }
-  
-  .habitacion2-content .btn-volver:hover {
-    background-color: #CC3333; /* Fondo rojo al pasar el mouse */
-    color: white;
-    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
-  }
-  
-  /* Opcional: Añade un efecto sutil de parpadeo */
-  @keyframes flicker {
-    0% { opacity: 0.95; }
-    50% { opacity: 1; }
-    100% { opacity: 0.95; }
-  }
-  
-  .habitacion2-content {
-    animation: flicker 3s infinite; /* Aplica a todo el contenedor */
-  }
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.habitacion2-content .btn-volver:hover {
+    background-color: rgba(60, 20, 20, 0.3);
+    border-color: #5a2a2a;
+    color: #d8c6c6;
+}
+
+/* Animaciones */
+@keyframes smoke-drift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 10% 10%; }
+    100% { background-position: -10% -10%; }
+}
+
+@keyframes border-flicker {
+    0%, 100% { opacity: 0.8; }
+    25% { opacity: 0.6; }
+    50% { opacity: 0.9; }
+    75% { opacity: 0.5; }
+}
   .habitacion3-container {
     background: none;
     min-height: 100vh;
@@ -399,7 +508,7 @@ body {
     width: 100%;
     margin: 2rem;
     
-
+}
 .habitacion3-content .habitacion-imagen {
     position: fixed;
     top: 0;
@@ -785,49 +894,6 @@ body {
     box-shadow: 0 5px 15px rgba(85, 105, 127, 0.4);
 }
 
-/* Estilos para la vista de la carta */
-.carta-content {
-    background-color: rgba(41, 25, 12, 0.95);
-    border: 3px solid #d4af37;
-    padding: 3rem;
-}
-
-.carta-texto {
-    background: url('/img/papel-antiguo.png');
-    padding: 2rem;
-    border-radius: 8px;
-    color: #291912;
-    font-family: 'Times New Roman', serif;
-    position: relative;
-}
-
-.carta-texto::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: -1;
-    border-radius: 8px;
-}
-
-.carta-content .acertijos {
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.carta-content .acertijos ol {
-    margin-left: 2rem;
-    margin-top: 1rem;
-}
-
-.carta-content .acertijos li {
-    margin-bottom: 1rem;
-    color: #291912;
-}
 
 /* Efecto hover para el área clickeable */
 area {
@@ -905,81 +971,6 @@ area:hover + .hover-hint {
     text-decoration: underline;
 }
 
-.carta-caja {
-    background: rgba(40, 30, 20, 0.92);
-    border: 2px solid #bfa76f;
-    box-shadow: 0 0 30px rgba(191, 167, 111, 0.2);
-    border-radius: 18px;
-    padding: 48px 36px;
-    color: #f5ecd7;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-    position: relative;
-}
-
-.carta-caja::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    pointer-events: none;
-    box-shadow: 0 0 60px 10px rgba(191, 167, 111, 0.15) inset;
-}
-
-.carta-descripcion {
-    font-size: 1.2rem;
-    line-height: 2;
-    margin-bottom: 24px;
-    text-shadow: 1px 1px 2px #0008;
-}
-
-.carta-pista {
-    background: rgba(191, 167, 111, 0.08);
-    border-left: 4px solid #bfa76f;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    color: #bfa76f;
-    font-style: italic;
-    border-radius: 6px;
-}
-
-.carta-boton {
-    background-color: #bfa76f;
-    color: #2d2212;
-    border: none;
-    padding: 10px 24px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-family: inherit;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-.carta-boton:hover {
-    background-color: #e5d3a3;
-}
-
-.carta-input {
-    padding: 10px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    border: 1px solid #bfa76f;
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 10px;
-    background: #f5ecd7;
-    color: #2d2212;
-    font-family: inherit;
-}
-
-.carta-error {
-    color: #ff6666;
-    margin-top: 10px;
-    font-weight: bold;
-}
 
 
 .habitacion-imagen {
@@ -1009,13 +1000,444 @@ area:hover + .hover-hint {
     color: #CC3333 !important;
     opacity: 1;
 }
+/* Fondo de habitación abandonada con efecto de polvo */
+.habitacion-pantalla {
+    background-color: #111;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: 
+        url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+        radial-gradient(ellipse at center, #2a1a1a 0%, #000 100%);
+    position: relative;
+    overflow: hidden;
+}
 
+/* Efecto de telarañas sutiles */
+.habitacion-pantalla::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 20%, transparent 95%, rgba(120, 120, 120, 0.03) 100%),
+        radial-gradient(circle at 90% 80%, transparent 95%, rgba(120, 120, 120, 0.03) 100%);
+    pointer-events: none;
+}
 
+/* Contenedor principal de la carta */
+.carta-content {
+    background-color: #e8dfc8;
+    border: 1px solid #4d3a2b;
+    border-radius: 0;
+    padding: 35px 30px;
+    max-width: 750px;
+    width: 90%;
+    box-shadow: 
+        0 0 25px rgba(0, 0, 0, 0.8),
+        inset 0 0 30px rgba(100, 50, 0, 0.2);
+    position: relative;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    background-image: 
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,50 Q25,30 50,50 T100,50" stroke="rgba(100,80,60,0.08)" stroke-width="1" fill="none"/></svg>'),
+        linear-gradient(to bottom, rgba(232, 223, 200, 0.9), rgba(210, 200, 180, 0.9));
+    transform: rotate(-1deg);
+    animation: floating 8s ease-in-out infinite;
+    overflow: hidden;
+}
 
+/* Efecto de papel rasgado */
+.carta-content::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10%;
+    right: 10%;
+    height: 30px;
+    background: 
+        linear-gradient(135deg, transparent 45%, #4d3a2b 48%, transparent 55%),
+        linear-gradient(45deg, transparent 45%, #4d3a2b 48%, transparent 55%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
 
+/* Manchas de humedad y moho */
+.carta-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(100, 80, 60, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 70% 80%, rgba(80, 60, 40, 0.15) 0%, transparent 25%),
+        linear-gradient(to bottom, rgba(150, 100, 50, 0.05) 0%, transparent 10%);
+    pointer-events: none;
+}
 
+/* Título con efecto de tinta corrida */
+.titulo-habitacion {
+    color: #502020;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    text-shadow: 
+        2px 2px 0px rgba(80, 40, 40, 0.2),
+        4px 4px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px dashed #6a4a3a;
+    padding-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    font-variant: small-caps;
+}
 
+/* Efecto de tinta corrida en el título */
+.titulo-habitacion::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #6a4a3a, transparent);
+}
 
+/* Texto principal con efecto de escritura temblorosa */
+.carta-texto {
+    line-height: 1.8;
+    font-size: 1.15rem;
+    color: #3a2a2a;
+    text-align: justify;
+    padding: 15px;
+    position: relative;
+    background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.03) 0%, transparent 8%);
+}
 
+/* Letras marcadas con efecto de manchas de sangre */
+.letra-marcada {
+    color: #702020;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 0 0 3px rgba(110, 30, 30, 0.3);
+    animation: blood-drip 3s infinite;
+}
 
+/* Efecto de gotas de sangre */
+.letra-marcada::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 2px;
+    height: 8px;
+    background: linear-gradient(to bottom, #702020, transparent);
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top;
+    animation: blood-drop 3s infinite;
+}
+
+/* Pista con aspecto de nota arrancada */
+.carta-pista {
+    margin-top: 35px;
+    padding: 18px;
+    background-color: rgba(90, 50, 50, 0.15);
+    border-left: 4px solid #6a3a3a;
+    border-right: 1px dashed #6a3a3a;
+    font-style: italic;
+    color: #502020;
+    position: relative;
+    transform: rotate(1deg);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto de rasgado en la pista */
+.carta-pista::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 10%;
+    right: 10%;
+    height: 10px;
+    background: 
+        linear-gradient(135deg, transparent 45%, #6a3a3a 48%, transparent 55%);
+    background-size: 15px 15px;
+    opacity: 0.3;
+}
+
+/* Botón con aspecto de madera vieja */
+.btn-volver {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    background-color: #4d3a2b;
+    color: #e0d0c0;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.4s;
+    font-weight: bold;
+    border: 1px solid #3a2a1b;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 
+        0 3px 6px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+}
+
+/* Efecto de polvo al pasar el mouse */
+.btn-volver:hover {
+    background-color: #5a4a3b;
+    color: #f0e0d0;
+    transform: translateY(-3px) rotate(-1deg);
+    box-shadow: 
+        0 5px 10px rgba(0, 0, 0, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones */
+@keyframes floating {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(-1.5deg); }
+}
+
+@keyframes blood-drip {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+}
+
+@keyframes blood-drop {
+    0%, 80% { transform: translateX(-50%) scaleY(0); opacity: 0; }
+    90% { transform: translateX(-50%) scaleY(1); opacity: 1; }
+    100% { transform: translateX(-50%) scaleY(1); opacity: 0; }
+}
+
+/* Efecto de viento fantasmal */
+@keyframes ghost-wind {
+    0%, 100% { transform: skewX(0deg); }
+    25% { transform: skewX(-0.5deg); }
+    75% { transform: skewX(0.5deg); }
+}
+
+.carta-content {
+    animation: 
+        ghost-wind 12s infinite,
+        floating 8s ease-in-out infinite;
+}
+
+/* Efecto de parpadeo de velas */
+@keyframes candle-flicker {
+    0%, 100% { box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(100, 50, 0, 0.2); }
+    50% { box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 40px rgba(120, 60, 0, 0.3); }
+}
+
+.carta-content {
+    animation: 
+        ghost-wind 12s infinite,
+        floating 8s ease-in-out infinite,
+        candle-flicker 5s infinite alternate;
+}
+
+.habitacion-ninos-container {
+    background-color: #111;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.habitacion-ninos-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.habitacion-ninos-content {
+    background-color: rgba(30, 20, 20, 0.85);
+    border: 1px solid #4a2a2a;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+    font-family: 'Courier New', monospace;
+}
+
+.titulo-habitacion {
+    color: #d8a8a8;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    text-shadow: 0 0 5px rgba(200, 100, 100, 0.5);
+    border-bottom: 1px solid #5a3a3a;
+    padding-bottom: 10px;
+}
+
+.descripcion p {
+    color: #c8b8b8;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.pista {
+    background-color: rgba(80, 40, 40, 0.3);
+    border-left: 3px solid #8a4a4a;
+    padding: 15px;
+    margin: 20px 0;
+    color: #d8a8a8;
+    font-style: italic;
+}
+
+.juego-audios {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(40, 20, 20, 0.5);
+    border: 1px dashed #6a4a4a;
+}
+
+.juego-audios h3 {
+    color: #d8a8a8;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.juego-audios p {
+    color: #b8a8a8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.audio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.audio-item {
+    background-color: rgba(60, 30, 30, 0.5);
+    border: 1px solid #5a3a3a;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.audio-item:hover {
+    background-color: rgba(80, 40, 40, 0.7);
+    transform: translateY(-3px);
+}
+
+.audio-item.playing {
+    background-color: rgba(100, 50, 50, 0.7);
+    box-shadow: 0 0 10px rgba(200, 100, 100, 0.5);
+}
+
+.btn-audio {
+    background: none;
+    border: none;
+    color: #d8a8a8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.audio-number {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.form-respuesta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-confirmar {
+    background-color: #5a3a3a;
+    color: #e8d8d8;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+.btn-confirmar:hover {
+    background-color: #6a4a4a;
+    transform: translateY(-2px);
+}
+
+.btn-confirmar:disabled {
+    background-color: #3a2a2a;
+    color: #8a7a7a;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #ff9999;
+    background-color: rgba(100, 20, 20, 0.3);
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #8a4a4a;
+}
+
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #b8a8a8;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-volver:hover {
+    color: #d8a8a8;
+    text-shadow: 0 0 5px rgba(200, 100, 100, 0.5);
+}
+
+/* Efectos especiales */
+@keyframes flicker {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.habitacion-ninos-content {
+    animation: flicker 5s infinite;
+}
+.habitacion-ninos-container {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), /* Opacidad reducida */
+    url('/img/cuarto.jpg');
+    background-size: cover;
+    background-position: center; /* Asegura que la imagen esté centrada */
+    width: 100%;
+    height: 100vh;
 }

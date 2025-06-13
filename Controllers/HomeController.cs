@@ -165,7 +165,7 @@ namespace ElOrfanatoOlvidado.Controllers
             return new Habitacion
             {
                 Numero = 2,
-                Descripcion = "Adivina los objetos según las pistas y obtén la palabra clave.",
+                Descripcion = "Adivina los objetos según las pistas y obtén la clave.",
                 Pista = "Cada objeto vale una letra según su posición en el abecedario.",
                 RespuestaCorrecta = "3313"
             };
@@ -203,7 +203,7 @@ namespace ElOrfanatoOlvidado.Controllers
                     "/audio/cancion4.mp3"
                 },
                 Pista = "Solo una canción coincide con la original.",
-                RespuestaCorrecta = "melodia"
+                RespuestaCorrecta = "4"
             };
         }
     }

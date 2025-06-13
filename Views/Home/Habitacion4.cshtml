@@ -1,53 +1,101 @@
 @{
-    ViewData["Title"] = "Habitación 4 - El Laboratorio";
+    ViewData["Title"] = "Cuarto de Niños - Los Sonidos del Pasado";
 }
 
-<div class="habitacion4-container">
-    <div class="habitacion4-content">
-        <h1 class="titulo-habitacion">LABORATORIO SECRETO</h1>
+<div class="habitacion-ninos-container">
+    <div class="habitacion-ninos-content">
+        <h1 class="titulo-habitacion">CUARTO DE NIÑOS</h1>
 
         <div class="descripcion">
-            <p>Has descubierto un laboratorio oculto. Pantallas verdes parpadean en la oscuridad, mostrando secuencias de código y fórmulas incomprensibles. El zumbido de equipos antiguos llena el aire.</p>
+            <p>El cuarto está en penumbras, con juguetes carbonizados esparcidos por el suelo. Las paredes conservan marcas de pequeños dedos y dibujos infantiles medio quemados. Un viento frío susurra entre las grietas.</p>
         </div>
 
         <div class="pista">
-            <p>SISTEMA: /iniciando_secuencia_de_acceso/</p>
-            <p>Los números tienen un significado oculto... La secuencia es la clave.</p>
+            <p>Entre los escombros encuentras una vieja grabadora. Al pulsar los botones, escuchas voces del pasado...</p>
         </div>
 
-        <div class="acertijos">
-            <p>EJECUTANDO PROTOCOLO DE SEGURIDAD...</p>
-            <pre>
-01000101 01101110 
-01110100 01110010 
-01100101 00100000
-            </pre>
-            <p>Para acceder al sistema central, descifra:</p>
-            <ol>
-                <li>Soy binario pero no soy número</li>
-                <li>Me ejecuto pero no me muevo</li>
-                <li>Proceso todo pero nada comprendo</li>
-            </ol>
-        </div>
-
-        <form asp-controller="Home" asp-action="VerificarHabitacion4" method="post" class="form-respuesta">
-            <div class="input-container" data-tooltip="Ingresa el código de acceso">
-                <input type="text" 
-                       required
-                       name="respuesta"
-                       placeholder="INGRESE_CÓDIGO_DE_ACCESO>"
-                       autocomplete="off" />
+        <div class="juego-audios">
+            <h3>ELIGE EL AUDIO CORRECTO</h3>
+            <p>¿Acaso alguno te trae recuerdos? Encuéntralo para descubrir el secreto.</p>
+            
+            <div class="audio-container">
+                <div class="audio-item" data-numero="1">
+                    <button class="btn-audio" onclick="reproducirAudio(1)">
+                        <span class="audio-number">1</span>
+                        <span class="audio-icon">▶️</span>
+                    </button>
+                    <audio id="audio1" src="/audios/ninos_risa.mp3" preload="auto"></audio>
+                </div>
+                
+                <div class="audio-item" data-numero="2">
+                    <button class="btn-audio" onclick="reproducirAudio(2)">
+                        <span class="audio-number">2</span>
+                        <span class="audio-icon">▶️</span>
+                    </button>
+                    <audio id="audio2" src="/audios/ninos_llanto.mp3" preload="auto"></audio>
+                </div>
+                
+                <div class="audio-item" data-numero="3">
+                    <button class="btn-audio" onclick="reproducirAudio(3)">
+                        <span class="audio-number">3</span>
+                        <span class="audio-icon">▶️</span>
+                    </button>
+                    <audio id="audio3" src="/audios/ninos_canción.mp3" preload="auto"></audio>
+                </div>
+                
+                <div class="audio-item" data-numero="4">
+                    <button class="btn-audio" onclick="reproducirAudio(4)">
+                        <span class="audio-number">4</span>
+                        <span class="audio-icon">▶️</span>
+                    </button>
+                    <audio id="audio4" src="/audios/ninos_susurro.mp3" preload="auto"></audio>
+                </div>
             </div>
-            <button type="submit">EJECUTAR_SECUENCIA</button>
+        </div>
+
+        <form asp-controller="Home" asp-action="VerificarAudio" method="post" class="form-respuesta">
+            <input type="hidden" id="audioSeleccionado" name="audioSeleccionado" value="">
+            <button type="submit" class="btn-confirmar" disabled>CONFIRMAR SELECCIÓN</button>
         </form>
 
         @if (TempData["Error"] != null)
         {
             <div class="error">
-                <pre>ERROR: @TempData["Error"]</pre>
+                <p>@TempData["Error"]</p>
             </div>
         }
 
-        <a href="@Url.Action("Index", "Home")" class="btn-volver">SALIR_DEL_SISTEMA</a>
+        <a href="@Url.Action("Habitacion3", "Home")" class="btn-volver">VOLVER AL PASILLO</a>
     </div>
 </div>
+
+@section Scripts {
+<script>
+    let audioActual = null;
+    let audioSeleccionado = null;
+
+    function reproducirAudio(numero) {
+        // Detener audio actual si hay uno reproduciéndose
+        if (audioActual) {
+            audioActual.pause();
+            audioActual.currentTime = 0;
+            document.querySelector(`.audio-item[data-numero="${audioActual.id.replace('audio','')}"]`).classList.remove('playing');
+        }
+        
+        // Reproducir nuevo audio
+        audioActual = document.getElementById(`audio${numero}`);
+        audioActual.play();
+        document.querySelector(`.audio-item[data-numero="${numero}"]`).classList.add('playing');
+        
+        // Seleccionar audio para enviar
+        audioSeleccionado = numero;
+        document.getElementById('audioSeleccionado').value = numero;
+        document.querySelector('.btn-confirmar').disabled = false;
+        
+        // Cuando termine la reproducción
+        audioActual.onended = function() {
+            document.querySelector(`.audio-item[data-numero="${numero}"]`).classList.remove('playing');
+        };
+    }
+</script>
+}
