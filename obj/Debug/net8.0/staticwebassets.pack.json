@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\lluvia.mp4",
+      "PackagePath": "staticwebassets\\audio\\lluvia.mp4"
+    },
+    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

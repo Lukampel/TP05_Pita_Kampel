@@ -1409,20 +1409,6 @@ area:hover + .hover-hint {
     border: 1px solid #8a4a4a;
 }
 
-.btn-volver {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    color: #b8a8a8;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.btn-volver:hover {
-    color: #d8a8a8;
-    text-shadow: 0 0 5px rgba(200, 100, 100, 0.5);
-}
-
 /* Efectos especiales */
 @keyframes flicker {
     0%, 100% { opacity: 0.8; }

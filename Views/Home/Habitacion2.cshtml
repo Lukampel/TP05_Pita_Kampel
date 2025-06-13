@@ -2,7 +2,10 @@
 @{
     ViewData["Title"] = $"Habitación {@Model.Numero}";
 }
-
+     <audio autoplay loop>
+    <source src="/audio/lluvia.mp3" type="audio/mpeg"> 
+    Tu navegador no soporta el audio.
+</audio>
 <div class="habitacion2-container">
     <div class="habitacion2-content">
         <h1 class="titulo-habitacion">El comedor</h1>
@@ -14,6 +17,7 @@
         <div class="pista">
             <p>@Model.Pista</p>
         </div>
+   
 
         <div class="acertijos">
             <ol>

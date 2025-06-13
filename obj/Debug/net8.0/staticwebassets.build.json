@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PHxTysj4qtQEAvNucty4/5HvOklIYMN0F6nD+20DTRM=",
+  "Hash": "9EiCSAeQaJJbIIx0ljYLxR3jVxfa25swJ8x8KVvN9Uw=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\lluvia.mp4",
+      "SourceId": "PrimerProyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\",
+      "BasePath": "_content/PrimerProyecto",
+      "RelativePath": "audio/lluvia.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\lluvia.mp4"
+    },
     {
       "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\css\\site.css",
       "SourceId": "PrimerProyecto",
