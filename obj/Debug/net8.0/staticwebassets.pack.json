@@ -1,8 +1,28 @@
 {
   "Files": [
     {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\Grito.wav",
+      "PackagePath": "staticwebassets\\audio\\Grito.wav"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\Llanto.mp3",
+      "PackagePath": "staticwebassets\\audio\\Llanto.mp3"
+    },
+    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\lluvia.mp4",
       "PackagePath": "staticwebassets\\audio\\lluvia.mp4"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\pasos.mp3",
+      "PackagePath": "staticwebassets\\audio\\pasos.mp3"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\susurro.wav",
+      "PackagePath": "staticwebassets\\audio\\susurro.wav"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\tormenta.wav",
+      "PackagePath": "staticwebassets\\audio\\tormenta.wav"
     },
     {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\css\\site.css",
@@ -29,6 +49,14 @@
       "PackagePath": "staticwebassets\\img\\RAMI.png"
     },
     {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\Thumbs.db",
+      "PackagePath": "staticwebassets\\img\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\bosque.jpg",
+      "PackagePath": "staticwebassets\\img\\bosque.jpg"
+    },
+    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\comedor.jpg",
       "PackagePath": "staticwebassets\\img\\comedor.jpg"
     },
@@ -39,6 +67,10 @@
     {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\orfanato.png",
       "PackagePath": "staticwebassets\\img\\orfanato.png"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\perdio.jpg",
+      "PackagePath": "staticwebassets\\img\\perdio.jpg"
     },
     {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\img\\traductor.png",

@@ -1,11 +1,11 @@
 @{
-    ViewData["Title"] = "¡Ganaste!";
+    ViewData["Title"] = "¡Escapaste!";
 }
-     <audio autoplay loop>
-    <source src="/audio/lluvia.mp3" type="audio/mpeg"> 
-    Tu navegador no soporta el audio.
-</audio>
-<h1>¡Felicidades!</h1>
-<p>Has logrado escapar del orfanato con éxito.</p>
 
-<a asp-controller="Home" asp-action="Index">Volver al inicio</a>
+<div class="gano-container">
+    <div class="gano-content">
+        <h1 class="gano-titulo">¡FELICITACIONES!</h1>
+        <p class="gano-mensaje">Has logrado escapar del orfanato y resolver todos los misterios.<br>¡Tu ingenio y valentía te han llevado a la libertad!</p>
+        <a href="/" class="gano-btn">Volver al inicio</a>
+    </div>
+</div>

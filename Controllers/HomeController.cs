@@ -103,7 +103,7 @@ namespace ElOrfanatoOlvidado.Controllers
                     if (correcta) salaDeEscape.CodigoHabitacion3 = respuesta;
                     break;
                 case 4:
-                    correcta = respuesta?.ToLower() == "melodia";
+                    correcta = respuesta == "4";
                     if (correcta) salaDeEscape.CodigoHabitacion4 = respuesta;
                     break;
             }
@@ -111,6 +111,8 @@ namespace ElOrfanatoOlvidado.Controllers
             if (correcta)
             {
                 salaDeEscape.AvanzarHabitacion();
+                if (salaDeEscape.numHabitacion <= 4)
+                    salaDeEscape.ReiniciarIntentos(salaDeEscape.numHabitacion);
                 HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
 
                 if (salaDeEscape.Gano)
@@ -119,7 +121,14 @@ namespace ElOrfanatoOlvidado.Controllers
                 return RedirectToAction("Habitacion");
             }
 
-            ViewBag.Error = "Respuesta incorrecta, intenta nuevamente.";
+            salaDeEscape.intentosRestantesPorHabitacion[habitacionNumero]--;
+            if (salaDeEscape.intentosRestantesPorHabitacion[habitacionNumero] <= 0)
+            {
+                HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
+                return RedirectToAction("Perdio");
+            }
+
+            ViewBag.Error = $"Respuesta incorrecta, te quedan {salaDeEscape.intentosRestantesPorHabitacion[habitacionNumero]} intento(s).";
             HttpContext.Session.SetString(SessionKey, JsonConvert.SerializeObject(salaDeEscape));
 
             switch (habitacionNumero)

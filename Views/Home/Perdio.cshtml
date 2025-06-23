@@ -1,11 +1,11 @@
 @{
-    ViewData["Title"] = "Perdiste";
+    ViewData["Title"] = "Has perdido";
 }
-<audio autoplay loop>
-    <source src="/audio/lluvia.mp3" type="audio/mpeg"> 
-    Tu navegador no soporta el audio.
-</audio>
-<h1>¡Tiempo terminado!</h1>
-<p>Lo siento, no lograste escapar a tiempo.</p>
 
-<a asp-controller="Home" asp-action="Index">Volver al inicio</a>
+<div class="perdio-container">
+    <div class="perdio-content">
+        <h1 class="perdio-titulo">¡HAS PERDIDO!</h1>
+        <p class="perdio-mensaje">Te has quedado sin oportunidades.<br>El orfanato sigue guardando sus secretos...<br>¿Te animas a intentarlo de nuevo?</p>
+        <a href="/" class="perdio-btn">Volver al inicio</a>
+    </div>
+</div>

@@ -53,8 +53,9 @@
             </div>
         </div>
 
-        <form asp-controller="Home" asp-action="VerificarAudio" method="post" class="form-respuesta">
-            <input type="hidden" id="audioSeleccionado" name="audioSeleccionado" value="">
+        <form asp-controller="Home" asp-action="ResolverHabitacion" method="post" class="form-respuesta">
+            <input type="hidden" name="habitacionNumero" value="4" />
+            <input type="hidden" id="audioSeleccionado" name="respuesta" value="">
             <button type="submit" class="btn-confirmar" disabled>CONFIRMAR SELECCIÓN</button>
         </form>
 
