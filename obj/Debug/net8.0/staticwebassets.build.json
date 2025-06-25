@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7caphTOf0u7MbL5o87qMbfFKHvlGY+X3nxfLXS4kXq4=",
+  "Hash": "T2rZCTiYMzY35BthhtXTao5DIWunOgvguBQIL0xqQbs=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\audio\\Llanto.mp3"
-    },
-    {
-      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\lluvia.mp4",
-      "SourceId": "PrimerProyecto",
-      "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\",
-      "BasePath": "_content/PrimerProyecto",
-      "RelativePath": "audio/lluvia.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\audio\\lluvia.mp4"
     },
     {
       "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\pasos.mp3",

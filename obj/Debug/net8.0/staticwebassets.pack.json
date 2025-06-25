@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\audio\\Llanto.mp3"
     },
     {
-      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\lluvia.mp4",
-      "PackagePath": "staticwebassets\\audio\\lluvia.mp4"
-    },
-    {
       "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Kampel_Pita\\wwwroot\\audio\\pasos.mp3",
       "PackagePath": "staticwebassets\\audio\\pasos.mp3"
     },
