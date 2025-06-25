@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PrimerProyecto
 build_property.RootNamespace = PrimerProyecto
-build_property.ProjectDir = Z:\2025\PROG2025\TP05-Pita-Kampel\TP05_Kampel_Pita\
+build_property.ProjectDir = c:\Users\49261291\Downloads\TP05-Pita-Kampel\TP05_Kampel_Pita\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\2025\PROG2025\TP05-Pita-Kampel\TP05_Kampel_Pita
+build_property.MSBuildProjectDirectory = c:\Users\49261291\Downloads\TP05-Pita-Kampel\TP05_Kampel_Pita
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Carta.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Carta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Gano.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Gano.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYW5vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion1.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion2.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion3.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion4.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Habitacion4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Historia.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Historia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Index.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Integrantes.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Integrantes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnRlZ3JhbnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Perdio.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Perdio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXJkaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Reglas.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Reglas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdsYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Traductor.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Home/Traductor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFkdWN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Shared/_Layout.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/_ViewImports.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2025/PROG2025/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/_ViewStart.cshtml]
+[c:/Users/49261291/Downloads/TP05-Pita-Kampel/TP05_Kampel_Pita/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
