@@ -1,127 +1,131 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Grito.wav",
-      "PackagePath": "staticwebassets\\audio\\Grito.wav"
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Grito.mp3",
+      "PackagePath": "staticwebassets\\audio\\Grito.mp3"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Llanto.mp3",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Llanto.mp3",
       "PackagePath": "staticwebassets\\audio\\Llanto.mp3"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\pasos.mp3",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\pasos.mp3",
       "PackagePath": "staticwebassets\\audio\\pasos.mp3"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\susurro.wav",
-      "PackagePath": "staticwebassets\\audio\\susurro.wav"
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\susurro.mp3",
+      "PackagePath": "staticwebassets\\audio\\susurro.mp3"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\tormenta.wav",
-      "PackagePath": "staticwebassets\\audio\\tormenta.wav"
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\tormenta.mp3",
+      "PackagePath": "staticwebassets\\audio\\tormenta.mp3"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\css\\site.css",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\favicon.ico",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion1.webp",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion1.webp",
       "PackagePath": "staticwebassets\\img\\Habitacion1.webp"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion3.png",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion3.png",
       "PackagePath": "staticwebassets\\img\\Habitacion3.png"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\LU.png",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\LU.png",
       "PackagePath": "staticwebassets\\img\\LU.png"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\RAMI.png",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\RAMI.png",
       "PackagePath": "staticwebassets\\img\\RAMI.png"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Thumbs.db",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Thumbs.db",
       "PackagePath": "staticwebassets\\img\\Thumbs.db"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\bosque.jpg",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\bosque.jpg",
       "PackagePath": "staticwebassets\\img\\bosque.jpg"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\comedor.jpg",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\comedor.jpg",
       "PackagePath": "staticwebassets\\img\\comedor.jpg"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\cuarto.jpg",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\cuarto.jpg",
       "PackagePath": "staticwebassets\\img\\cuarto.jpg"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\orfanato.png",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\orfanato.png",
       "PackagePath": "staticwebassets\\img\\orfanato.png"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\perdio.jpg",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\perdio.jpg",
       "PackagePath": "staticwebassets\\img\\perdio.jpg"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\traductor.png",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\traductor.png",
       "PackagePath": "staticwebassets\\img\\traductor.png"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\site.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\timer.js",
+      "PackagePath": "staticwebassets\\js\\timer.js"
+    },
+    {
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

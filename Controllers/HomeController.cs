@@ -203,7 +203,7 @@ namespace ElOrfanatoOlvidado.Controllers
             return new Habitacion
             {
                 Numero = 4,
-                Descripcion = "Escucha la canción de cuna correcta para obtener la clave.",
+                Descripcion = "Escucha la canción de cuna correcta para obtener la clave. Ten cuidado, solo tienes una oportunidad..",
                 Audios = new[]
                 {
                     "/audio/cancion1.mp3",

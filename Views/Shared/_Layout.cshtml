@@ -10,7 +10,12 @@
 
 <body>
     <header>
-        
+        @if (ViewData["MostrarTimer"] == null || (bool)ViewData["MostrarTimer"])
+        {
+            <div id="escape-timer-container">
+                <span id="escape-timer">1:00</span>
+            </div>
+        }
     </header>
 
     <main role="main">
@@ -23,6 +28,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/timer.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

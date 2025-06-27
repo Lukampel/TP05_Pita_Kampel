@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lndPs56o1607Hinmom3hmHDXj1x3+Rg5VkUOUbnukuk=",
+  "Hash": "1U8rb55EXWsTyVQGYUKbtxgPcy4S9U7bNEJ4nMFZJj0=",
   "Source": "PrimerProyecto",
   "BasePath": "_content/PrimerProyecto",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "PrimerProyecto\\wwwroot",
       "Source": "PrimerProyecto",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Grito.wav",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Grito.mp3",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
-      "RelativePath": "audio/Grito.wav",
+      "RelativePath": "audio/Grito.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\audio\\Grito.wav"
+      "OriginalItemSpec": "wwwroot\\audio\\Grito.mp3"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Llanto.mp3",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\Llanto.mp3",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "audio/Llanto.mp3",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\Llanto.mp3"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\pasos.mp3",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\pasos.mp3",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "audio/pasos.mp3",
       "AssetKind": "All",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\audio\\pasos.mp3"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\susurro.wav",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\susurro.mp3",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
-      "RelativePath": "audio/susurro.wav",
+      "RelativePath": "audio/susurro.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\audio\\susurro.wav"
+      "OriginalItemSpec": "wwwroot\\audio\\susurro.mp3"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\tormenta.wav",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\audio\\tormenta.mp3",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
-      "RelativePath": "audio/tormenta.wav",
+      "RelativePath": "audio/tormenta.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\audio\\tormenta.wav"
+      "OriginalItemSpec": "wwwroot\\audio\\tormenta.mp3"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\css\\site.css",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\css\\site.css",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\favicon.ico",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\favicon.ico",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\bosque.jpg",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\bosque.jpg",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/bosque.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bosque.jpg"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\comedor.jpg",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\comedor.jpg",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/comedor.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\img\\comedor.jpg"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\cuarto.jpg",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\cuarto.jpg",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/cuarto.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\cuarto.jpg"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion1.webp",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion1.webp",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/Habitacion1.webp",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Habitacion1.webp"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion3.png",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Habitacion3.png",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/Habitacion3.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Habitacion3.png"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\LU.png",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\LU.png",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/LU.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\LU.png"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\orfanato.png",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\orfanato.png",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/orfanato.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\img\\orfanato.png"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\perdio.jpg",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\perdio.jpg",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/perdio.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\perdio.jpg"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\RAMI.png",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\RAMI.png",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/RAMI.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\img\\RAMI.png"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Thumbs.db",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\Thumbs.db",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/Thumbs.db",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Thumbs.db"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\traductor.png",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\img\\traductor.png",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "img/traductor.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\traductor.png"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\site.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\site.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -378,10 +378,29 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\js\\timer.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "BasePath": "_content/PrimerProyecto",
+      "RelativePath": "js/timer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\timer.js"
+    },
+    {
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "PrimerProyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -397,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -416,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -435,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -454,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -473,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -492,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -511,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -530,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -549,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -568,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -587,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PrimerProyecto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49261291\\Downloads\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
+      "ContentRoot": "Z:\\2025\\PROG2025\\TP05-Pita-Kampel\\TP05_Pita_Kampel\\wwwroot\\",
       "BasePath": "_content/PrimerProyecto",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
