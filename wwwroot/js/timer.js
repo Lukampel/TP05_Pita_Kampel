@@ -1,11 +1,10 @@
 // Temporizador global de 30 minutos para la sala de escape
 (function() {
     const TIMER_KEY = 'escapeRoomTimer';
-    const TOTAL_SECONDS = 30 * 60; // 30 minutos
+    const TOTAL_SECONDS = 45 * 60; // 45 minutos
     const timerDisplay = document.getElementById('escape-timer');
     if (!timerDisplay) {
-        // Si no hay timer en la vista, limpiar cualquier timer guardado
-        localStorage.removeItem(TIMER_KEY);
+        // Si no hay timer en la vista, no hacer nada
         return;
     }
     let intervalId;
@@ -53,13 +52,13 @@
 
     // Inicialización
     let secondsLeft = TOTAL_SECONDS;
-    const stored = getStoredTime();
-    if (stored && typeof stored.secondsLeft === 'number') {
-        // Si el valor guardado es mayor que el nuevo TOTAL_SECONDS, reiniciar el timer
-        if (stored.secondsLeft > TOTAL_SECONDS) {
-            secondsLeft = TOTAL_SECONDS;
-            storeTime(secondsLeft);
-        } else {
+    // Si hay marca de reinicio, forzar timer en 45:00
+    if (localStorage.getItem('escapeRoomTimerStart')) {
+        localStorage.removeItem('escapeRoomTimerStart');
+        secondsLeft = TOTAL_SECONDS;
+    } else {
+        const stored = getStoredTime();
+        if (stored && typeof stored.secondsLeft === 'number') {
             // Calcular el tiempo real pasado
             const elapsed = Math.floor((Date.now() - stored.timestamp) / 1000);
             secondsLeft = stored.secondsLeft - elapsed;

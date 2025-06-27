@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Inicio - El Orfanato Olvidado";
-    ViewData["MostrarTimer"] = false;
+    // ViewData["MostrarTimer"] = false;
 }
 
 <audio autoplay loop>
@@ -21,10 +21,17 @@
         <a href="/Home/Integrantes" class="btn btn-primary">Ver Integrantes</a>
     </div>
 
-    <form asp-controller="Home" asp-action="Habitacion" method="get">
+    <form asp-controller="Home" asp-action="Habitacion" method="get" onsubmit="localStorage.removeItem('escapeRoomTimer');">
         <button type="submit" class="btn btn-primary mt-4">Comenzar</button>
     </form>
 </div>
+
+@section Scripts {
+    <script>
+        localStorage.setItem('escapeRoomTimerStart', 'true');
+        localStorage.removeItem('escapeRoomTimer');
+    </script>
+}
 
 
 
